@@ -1,0 +1,38 @@
+/*
+ * Skin: Blue
+ * ----------
+ */
+ .theme-gray {
+    user-select: none;
+    //Navbar
+    x-menubar, .nav{
+      -webkit-app-region: drag;
+    }
+    rb-sidebar {
+      border-top: 1px solid @lightgray;
+      .project-box {
+        height: 100px;
+        padding-top: 5px;
+        padding-bottom: 20px;
+                cursor: pointer !important;
+        .title {
+          cursor: pointer !important;
+          padding-left: 15px;
+        }
+        .text {
+          cursor: pointer !important;
+          padding-left: 30px;
+        }
+      }
+    }
+
+  
+    .fullwidth {
+        width: 100%;
+        min-width: 100%;
+    }
+  .halfwidth {
+         width: 50%;
+        min-width: 50%;
+  }
+}

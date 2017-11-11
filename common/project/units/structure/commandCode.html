@@ -1,0 +1,35 @@
+<template>
+    <rb-box flex row column class="view-oi">
+        <rb-box flex row style="flex: 0 0 auto; height: 60px;">
+            <rb-box flex row>
+                <rb-box flex style="flex: 0 0 auto; width: 300px; margin-top: 16px;">
+                    <rb-box flex class="size-24 bold center">
+                        <x-box style="margin-left: 30px">
+                            <x-label id="title"></x-label>
+                        </x-box>
+                    </rb-box>
+                </rb-box>
+            </rb-box>
+            <rb-box flex style="flex: 0 0 auto; width: 300px; margin-right: 10px; margin-top: 6px">
+                <x-box>
+                    <rb-box flex class="size-12 bold center">
+                        <x-label>Default Command</x-label>
+                    </rb-box>
+                    <x-select id="selectCommand" class="rb-button fg-black bold" style="width: 50%">
+                        <x-menu>
+                            <x-menuitem value="none" selected="true">
+                                <x-label>Do Nothing</x-label>
+                            </x-menuitem>
+                        </x-menu>
+                    </x-select>
+                </x-box>
+            </rb-box>
+        </rb-box>
+
+        <rb-box flex row style="max-width: 100%">
+            <div id="workspace">
+
+            </div>
+        </rb-box>
+    </rb-box>
+</template>

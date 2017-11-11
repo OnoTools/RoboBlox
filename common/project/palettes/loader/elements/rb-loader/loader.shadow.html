@@ -1,0 +1,65 @@
+<template>
+    <style>
+
+    </style>
+    <rb-box class="background" flex row style="justify-content: flex-start; background: gray; height: 100%">
+        <rb-box flex style="align-self: stretch; flex-grow: 6;">
+            <section class="bg-gray" style="position: relative;  margin: auto; top: 20%; right: 0; bottom: 0; left: 0; text-align: center;">
+                <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" style="width: 200px; height: 200px">
+                    <style>
+                        ellipse {
+                            fill: none;
+                            stroke: currentColor;
+                            stroke-linecap: round;
+                            stroke-dasharray: 10, 1000;
+                            animation: dash-animation 2s cubic-bezier(0.8, 0.25, 0.25, 0.9) infinite, rotate-animation 2s linear infinite, colors 6s ease-in-out infinite;
+                            transform-origin: center;
+                        }
+
+                        @keyframes rotate-animation {
+                            to {
+                                transform: rotate(360deg);
+                            }
+                        }
+
+                        @keyframes colors {
+                            0% {
+                                stroke: #4285F4;
+                            }
+                            25% {
+                                stroke: #DE3E35;
+                            }
+                            50% {
+                                stroke: #F7C223;
+                            }
+                            75% {
+                                stroke: #1B9A59;
+                            }
+                            100% {
+                                stroke: #4285F4;
+                            }
+                        }
+
+                        @keyframes dash-animation {
+                            50% {
+                                stroke-dasharray: 200;
+                                stroke-dashoffset: 0;
+                            }
+                            100% {
+                                stroke-dasharray: 245;
+                                stroke-dashoffset: -260;
+                            }
+                        }
+                    </style>
+
+                    <ellipse ry="40" rx="40" cy="50" cx="50" stroke-width="10" />
+                </svg>
+                <br/><br/><br/><br/><br/><br/>
+                <x-label style="font-size: 40px; font-weight: bold;">Loading</x-label>
+            </section>
+        </rb-box>
+    </rb-box>
+
+    <slot></slot>
+
+</template>

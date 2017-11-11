@@ -1,0 +1,87 @@
+
+
+@import "colors.less";
+body {
+     background-color: gray;
+     overflow: hidden;
+     height: 100%;
+}
+html {
+    height: 100%;
+}
+
+/**-=-=-=-=-==--=--=-=-=**/
+.rb-panel-icon {
+  margin-right: 10px;
+}
+.rb-input-round {
+  border-radius: 5px;
+  width: 100%;
+  display: block;
+}
+.rb-head-font{
+  font-size: 24px;
+}
+.rb-body-font{
+  font-size: 17px;
+}
+.rb-font {
+  font-family: 'Syncopate', serif;
+}
+.robo-font {
+  font-family: 'Roboto', serif;
+}
+
+/*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
+
+.no-width {
+  width: inherit !important;
+}
+.border-between > [class*='col-']:before {
+   background: #e3e3e3;
+   bottom: 0;
+   content: " ";
+   left: 0;
+   position: absolute;
+   width: 1px;
+   top: 0;
+}
+
+.border-between > [class*='col-']:first-child:before {
+   display: none;
+}
+/********************/
+
+.x-close:hover {
+  background: @red !important;
+}
+
+.drag{
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+  -webkit-align-self: auto;
+  align-self: auto;
+  height: 100%;
+  -webkit-app-region: drag;
+}
+
+
+
+/*******/
+.rb-button {
+  height: 50px;
+  width: 50px;
+}
+.rb-button .rb-icon {
+  height: 30px;
+  width: 30px;
+}
+
+
+.rb-width-90p {
+  width: 90% !important;
+}
+.rb-height-30 {
+  height: 70px !important;
+}

@@ -1,0 +1,50 @@
+/**
+
+ROBOBLOX - THEME GRAY
+(c) 2017 Brendan Fuller
+
+**/
+.theme-gray {
+  x-menubar, .nav{
+    background: @darkgray;
+    color: @lightgray;
+    x-menu {
+      background: @darkgray;
+      color: @lightgray;
+      x-menuitem {
+        background: @darkgray;
+        color: @lightgray;
+      }
+    }
+  }
+  x-dialog {
+    background: @lightgray;
+  }
+  x-shortcut{
+    color: @silver;
+  }
+  rb-sidebar {
+    background: @gray;
+    .project-box {
+      background: @lightgray !important;
+      border-bottom: 1px solid @darkgray;
+              cursor: pointer !important;
+      .title {
+        cursor: pointer !important;
+        font-size: 30px;
+        font-weight: bold;
+      }
+      .text {
+        cursor: pointer !important;
+        font-size: 14px;
+        padding-left: 30px;
+      }
+    }
+    .project-box:hover {
+      background: @silver !important;
+    }
+  }
+  .rb-main {
+    background: @rb-gray;
+  }
+}

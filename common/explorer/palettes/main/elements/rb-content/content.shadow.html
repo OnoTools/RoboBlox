@@ -1,0 +1,32 @@
+<template>
+    <style>
+                :host {
+                   width: 100%;
+                   height: 100%;
+                   display: -webkit-box;
+                   display: -ms-flexbox;
+                   display: -webkit-flex;
+                   display: flex;
+                   -webkit-box-direction: normal;
+                   -webkit-box-orient: horizontal;
+                   -webkit-flex-direction: row;
+                   -ms-flex-direction: row;
+                   flex-direction: row;
+                   -webkit-flex-wrap: nowrap;
+                   -ms-flex-wrap: nowrap;
+                   flex-wrap: nowrap;
+                   -webkit-box-pack: start;
+                   -webkit-justify-content: flex-start;
+                   -ms-flex-pack: start;
+                   justify-content: flex-start;
+                   -webkit-align-content: stretch;
+                   -ms-flex-line-pack: stretch;
+                   align-content: stretch;
+                   -webkit-box-align: stretch;
+                   -webkit-align-items: stretch;
+                   -ms-flex-align: stretch;
+                   align-items: stretch;
+               }
+        </style>
+        <slot></slot>
+</template>

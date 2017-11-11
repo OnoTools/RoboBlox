@@ -1,0 +1,195 @@
+/*
+ * Skin: Blue
+ * ----------
+ */
+.theme-gray {
+  //Navbar
+  x-menubar, .nav{
+    background: @darkgray;
+    color: @lightgray;
+    x-menu {
+      background: @darkgray;
+      color: @lightgray;
+      x-menuitem {
+        background: @darkgray;
+        color: @lightgray;
+      }
+    }
+  }
+  x-doctabs {
+    border-top: 1px solid @lightgray;
+    background: @gray;
+    color: @lightgray;
+    x-doctab{
+      background: @gray;
+      color: @lightgray;
+      --accent-color: @aqua;
+    }
+  }
+  x-dialog {
+    background: @lightgray;
+  }
+  x-drawer {
+    background: @lightgray;
+  }
+  x-shortcut{
+    color: @silver;
+  }
+  rb-sidebar-view {
+      cursor: pointer;
+      background: @lightgray;
+  }
+  /* ROBLOX CLASSES */
+  .rb-sidebar {
+    background: @gray;
+    .rb-project-name {
+      font-family: 'Roboto', serif !important;
+      font-size: 30px;
+      font-weight: bold;
+      color: @silver;
+      text-decoration: underline;
+    }
+    .rb-tabs {
+      font-family: 'Roboto', serif !important;
+      font-size: 30px;
+      font-weight: bold;
+      color: @silver;
+    }
+    .rb-sections::-webkit-scrollbar {
+        width: 0px;
+        height: 0px;
+    }
+    .rb-sections {
+      .rb-history {
+        display: none; 
+        overflow: hidden;
+        width: 400px;
+        .undo {
+          background: white !important;
+          border-top: 1px solid black;
+        }
+        .redo {
+          background: @silver !important;
+          border-top: 1px solid black;
+          
+        }
+      }
+    }
+  }
+  .rb-sidebar-drag {
+    cursor: pointer;
+    background: @blue;
+  }
+  .rb-console {
+    ::selection {
+      background: @rb-gray; /* Gecko Browsers */
+      }
+    background-color: @gray;
+    .rb-sidebar {
+      background-color: @silver;
+      x-button {
+        background-color: @silver;
+      }
+    }
+  }
+  .rb-console-drag {
+    cursor: pointer;
+    background: @silver
+  }
+  .rb-console-drag::-webkit-scrollbar {
+    max-width: 20px !important;
+  }
+  
+  .rb-main {
+    background: @rb-gray;
+  }
+  .button {
+    background: @silver;
+    color: @darkgray
+  }
+  .input-size {
+    height: 50px;
+  }
+  .rb-prefrences {
+    .top {
+      background: @darkgray;
+      color: @silver;
+    }
+    .options {
+      background: @gray;
+        color: @silver;
+    }
+    .main {
+      background: @gray;
+      color: @silver;
+    }
+  }
+  .tree-view {
+    margin-top: 10px;
+    font-family: 'Roboto', serif !important;
+    font-size: 25px;
+    color: @silver;
+    ul {
+      //CLASSES
+      .single {
+        //padding-left: 24px;
+        list-style-type: none;
+        .visual {
+          opacity: 0;
+        }
+      }
+      .mutiple {
+        list-style-type: none;
+      }
+      .hidden {
+        display: none;
+        height: 0px;
+        transition: height 500ms ease
+      }
+      .show {
+        display: block;
+        height: auto;
+        transition: height 500ms ease;
+      }
+      x-box:hover,  x-box:focus {
+        color: @white;
+        cursor:pointer !important;
+      }
+      x-label {
+        cursor: pointer !important;
+      }
+    }
+    li {
+      opacity: 1;
+      -webkit-transition: height 0.5s ease-in-out;
+    }
+  }
+  .tree-view-show {
+    display: block;
+  }
+  .view-oi {
+    ::-webkit-scrollbar {
+      max-width: 10px;
+      max-height: 6px;
+      background: none;
+      color: @silver;
+      cursor: pointer !important;
+    }
+    ::-webkit-scrollbar-thumb {
+      background-color: @silver;
+      cursor: pointer !important;
+    }
+  }
+}
+
+
+
+
+.fullwidth {
+  width: 100%;
+  min-width: 100%;
+}
+.halfwidth {
+  width: 50%;
+  min-width: 50%;
+}

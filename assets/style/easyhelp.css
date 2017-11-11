@@ -1,0 +1,307 @@
+/* EasyHelp CSS, by Brendan Fuller
+
+v1.33
+*/
+
+
+/* ALL IN ALL USEFUL */
+.center {
+  text-align: center !important;
+}
+
+/* TEXTED DECOR AND LOOKS */
+
+.bold {
+  font-weight: bold !important;
+}
+.italic {
+  font-weight: italic !important;
+}
+.underline {
+  text-decoration: underline !important;
+}
+.overline {
+  text-decoration: overline !important;
+}
+.no-overline, .no-underline {
+  text-decoration: none;
+}
+
+.fg-black{
+  color: black !important;
+}
+.fg-red{
+  color: red !important;
+}
+.fg-orange{
+  color: orange !important;
+}
+.fg-green{
+  color: green !important;
+}
+.fg-limegreen {
+  color: #32CD32 !important;
+}
+.fg-yellow{
+  color: yellow !important;
+}
+.fg-gray{
+  color: gray !important;
+}
+.fg-lightgray{
+  color: lightgray !important;
+}
+.fg-white {
+  color: white !important;
+}
+/**/
+.bg-black{
+  background: black !important;
+}
+.bg-red{
+  background: red !important;
+}
+.bg-orange{
+  background: orange !important;
+}
+.bg-green{
+  background: green !important;
+}
+.bg-limegreen {
+  background: #32CD32 !important;
+}
+.bg-yellow{
+  background: yellow !important;
+}
+.bg-gray{
+  background: gray !important;
+}
+.bg-lightgray{
+  background-color: lightgray !important;
+}
+.bg-purple {
+  background-color: purple !important;
+}
+.bg-white {
+  background-color: white !important;
+}
+
+/* PADDING and MARGIN */
+.padding-5 {
+  padding: 5px;
+}
+.padding-5-top {
+  padding-top: 5px;
+}
+.padding-5-bottom {
+  padding-bottom: 5px;
+}
+.padding-5-left {
+  padding-left: 5px;
+}
+.padding-5-right {
+  padding-right: 5px;
+}
+
+.padding-10 {
+  padding: 10px;
+}
+.padding-10-top {
+  padding-top: 10px;
+}
+.padding-10-bottom {
+  padding-bottom: 10px;
+}
+.padding-10-left {
+  padding-left: 10px;
+}
+.padding-10-right {
+  padding-right: 10px;
+}
+
+.padding-15 {
+  padding: 15px;
+}
+.padding-15-top {
+  padding-top: 15px;
+}
+.padding-15-bottom {
+  padding-bottom: 15px;
+}
+.padding-15-left {
+  padding-left: 15px;
+}
+.padding-15-right {
+  padding-right: 15px;
+}
+
+.padding-20 {
+  padding: 20px;
+}
+.padding-20-top {
+  padding-top: 20px;
+}
+.padding-20-bottom {
+  padding-bottom: 20px;
+}
+.padding-20-left {
+  padding-left: 20px;
+}
+.padding-20-right {
+  padding-right: 20px;
+}
+
+
+.padding-50p {
+  padding: 50%;
+}
+.padding-50p-top {
+  padding-top: 50;
+}
+.padding-50p-bottom {
+  padding-bottom: 50;
+}
+.padding-50p-left {
+  padding-left: 50;
+}
+.padding-50p-right {
+  padding-right: 50;
+}
+
+
+.margin-5 {
+  margin: 5px;
+}
+.margin-5-top {
+  margin-top: 5px;
+}
+.margin-5-bottom {
+  margin-bottom: 5px;
+}
+.margin-5-left {
+  margin-left: 5px;
+}
+.margin-5-right {
+  margin-right: 5px;
+}
+
+.margin-10 {
+  margin: 10px;
+}
+.margin-10-top {
+  margin-top: 10px;
+}
+.margin-10-bottom {
+  margin-bottom: 10px;
+}
+.margin-10-left {
+  margin-left: 10px;
+}
+.margin-10-right {
+  margin-right: 10px;
+}
+
+.margin-15 {
+  margin: 15px;
+}
+.margin-15-top {
+  margin-top: 15px;
+}
+.margin-15-bottom {
+  margin-bottom: 15px;
+}
+.margin-15-left {
+  margin-left: 15px;
+}
+.margin-15-right {
+  margin-right: 15px;
+}
+
+.margin-20 {
+  margin: 20px;
+}
+.margin-20-top {
+  margin-top: 20px;
+}
+.margin-20-bottom {
+  margin-bottom: 20px;
+}
+.margin-20-left {
+  margin-left: 20px;
+}
+.margin-20-right {
+  margin-right: 20px;
+}
+
+/* TEXT SIZES */
+.size-12 {
+  font-size: 12px !important;
+}
+.size-14 {
+  font-size: 14px !important;
+}
+.size-16 {
+  font-size: 16px !important;
+}
+.size-18 {
+  font-size: 18px !important;
+}
+.size-20 {
+  font-size: 20px !important;
+}
+.size-22 {
+  font-size: 22px !important;
+}
+.size-24 {
+  font-size: 24px !important;
+}
+.size-26 {
+  font-size: 26px !important;
+}
+.size-28 {
+  font-size: 28px !important;
+}
+.size-30 {
+  font-size: 30px !important;
+}
+.size-32 {
+  font-size: 32px !important;
+}
+.size-34 {
+  font-size: 34px !important;
+}
+.size-36 {
+  font-size: 36px !important;
+}
+.size-38 {
+  font-size: 38px !important;
+}
+.size-40 {
+  font-size: 40px !important;
+}
+.size-42 {
+  font-size: 42px !important;
+}
+.size-44 {
+  font-size: 44px !important;
+}
+.size-46{
+  font-size: 46px !important;
+}
+.size-48 {
+  font-size: 48px !important;
+}
+
+
+/* Border Raduius */
+.radius-5 {
+  border-radius: 5px !important;
+}
+.radius-10 {
+  border-radius: 10px !important;
+}
+
+
+no-padding {
+  padding: none !important;
+}

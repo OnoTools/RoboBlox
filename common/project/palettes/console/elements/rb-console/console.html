@@ -1,0 +1,20 @@
+<template>
+    <rb-box flex style="overflow-y:scroll;">
+        <x-box id="console-area" vertical style="margin: 5px; padding: 0px; overflow-y:scroll;" class="size-15">
+        </x-box>
+    </rb-box>
+    <rb-box flex columnid="console-buttons" class="rb-sidebar" style="flex: 0 0 auto; width: 50px;">
+        <x-button toggled class="fg-limegreen rb-button" id="run">
+            <i class="fa fa-play size-24" aria-hidden="true"></i>
+        </x-button>
+        <x-button toggled class="fg-red rb-button" id="stop">
+            <i class="fa fa-times size-24" aria-hidden="true"></i>
+        </x-button>
+        <x-button toggled class="fg-orange rb-button" id="end">
+            <i class="fa fa-ban size-24" aria-hidden="true"></i>
+        </x-button>
+        <x-button toggled class="fg-gray rb-button" id="end">
+            <i class="fa fa-cog size-24" aria-hidden="true"></i>
+        </x-button>
+    </rb-box>
+</template>

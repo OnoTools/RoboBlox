@@ -1,0 +1,28 @@
+{
+  "name": "RoboBlox",
+  "version": "1.0.0",
+  "description": "FRC Code Editor",
+  "main": "app.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/OnoUtilities/RoboBlox",
+  "keywords": [
+    "RoboBlox"
+  ],
+  "author": "GitHub",
+  "license": "CC0-1.0",
+  "dependencies": {
+    "blockly": "^1.0.0",
+    "electron": "^1.8.1",
+    "electron-config": "^1.0.0",
+    "electron-window": "^0.8.1",
+    "fontawesome": "^4.7.2",
+    "forklift.js": "github:Import-Python/forklift.js",
+    "fs-jetpack": "^1.2.0",
+    "import-window": "github:Import-Python/import-window",
+    "less": "^2.7.3",
+    "xel": "0.0.63",
+    "xel-extend": "github:Import-Python/xel-extend"
+  }
+}

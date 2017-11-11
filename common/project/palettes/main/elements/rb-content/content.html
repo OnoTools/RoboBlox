@@ -1,0 +1,19 @@
+<template>
+    <rb-box flex row id="container" style="justify-content: flex-start;">
+        <rb-sidebar class="rb-sidebar"></rb-sidebar>
+        <rb-sidebar-view></rb-sidebar-view>
+        <rb-box flex column id="A">
+            <rb-box flex id="rb-content" class="rb-main" style="align-self: stretch; flex-grow: 2;">
+                <section data-id="MAIN:WELCOME" style="position: relative;  margin: auto; top: 30%; right: 0; bottom: 0; left: 0; border-radius: 3px; text-align: center;">
+                    <x-label style="font-size: 72px;" class="rb-font">
+                        <span class="bold">ROBO</span>
+                        <span class="rb-red">B</span><span class="rb-yellow">L</span><span class="rb-green">O</span><span class="rb-blue">X</span>
+                    </x-label>
+                    <x-label>A FRC Blockly Code Editor</x-label>
+                </section>
+            </rb-box>
+            <rb-console-view></rb-console-view>
+            <rb-console class="rb-console"></rb-console>
+        </rb-box>
+    </rb-box>
+</template>

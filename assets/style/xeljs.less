@@ -1,0 +1,46 @@
+.x-menu-right {
+    margin-left: auto;
+    margin-right: 0;
+    .x-menuitem-right {
+        width: 25px;
+        padding: 1px;
+        overflow: none !important;
+        -webkit-app-region: none;
+        .x-icon {
+            height: 25px !important;
+            width: 25px !important;
+        }
+        
+    }
+    .x-menuitem {
+        -webkit-app-region: no-drag;
+    }
+    .x-minimize:hover {
+        background: black !important;
+    }
+    .x-zoom:hover {
+        background: #00a65a !important;
+    }
+    .x-close:hover {
+        background: #dd4b39 !important;
+    }
+    
+}
+.x-menu-center {
+  margin: 0 auto;
+}
+.x-menu-left {
+  width: 200px;
+  min-height: 100%;
+  height: 100%;
+}
+//Fills in space the the menu bar isn't using
+.x-expand-drag{
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+  -webkit-align-self: auto;
+  align-self: auto;
+  height: 100%;
+  -webkit-app-region: drag;
+}

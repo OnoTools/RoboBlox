@@ -1,0 +1,152 @@
+{
+    "xboxCON": {
+      "default": true,
+      "language": {
+        "name": {
+          "en": "XBOX Controller"
+        },
+        "a": {
+          "en": "Button A"
+        },
+        "b": {
+          "en": "Button B"
+        }, 
+        "x": {
+          "en": "Button X"
+        },
+        "y": {
+          "en": "Button Y"
+        },
+        "bump_left": {
+          "en": "Bumper Left"
+        },
+        "bump_right": {
+          "en": "Bumper Right"
+        },
+        "back": {
+          "en": "Back"
+        },
+        "start": {
+          "en": "Start"
+        },
+        "stick_left": {
+          "en": "Stick Left"
+        },
+        "stick_right": {
+          "en": "Stick Right"
+        },
+        "trigger_left": {
+          "en": "Trigger Left"
+        },
+        "trigger_right": {
+          "en": "Trigger Right"
+        },
+        "pov_up": {
+          "en": "DPad Up"
+        },
+        "pov_up_right": {
+          "en": "DPad Up Right"
+        },
+        "pov_right": {
+          "en": "DPad Right"
+        },
+        "pov_down_right": {
+          "en": "DPad Down Right"
+        },
+        "pov_down": {
+          "en": "DPad Down"
+        },
+        "pov_down_left": {
+          "en": "DPad Down Left"
+        },
+        "pov_left": {
+          "en": "DPad Left"
+        },
+        "pov_left_up": {
+          "en": "DPad Left Up"
+        }
+      },
+      "buttons": {
+        "a": {
+          "id": 1,
+          "type": "BTN"
+        },
+        "b": {
+          "id": 2,
+          "type": "BTN"
+        },
+        "x": {
+          "id": 3,
+          "type": "BTN"
+        },
+        "y": {
+          "id": 4,
+          "type": "BTN"
+        },
+        "bump_left": {
+          "id": 5,
+          "type": "BTN"
+        },
+        "bump_right": {
+          "id": 6,
+          "type": "BTN"
+        },
+        "back": {
+          "id": 7,
+          "type": "BTN"
+        },
+        "start": {
+          "id": 8,
+          "type": "BTN"
+        },
+        "stick_left": {
+          "id": 9,
+          "type": "BTN"
+        },
+        "stick_right": {
+          "id": 10,
+          "type": "BTN"
+        },
+        "trigger_left": {
+          "id": 2,
+          "type": "ANALOG_BTN"
+        },
+        "trigger_right": {
+          "id": 3,
+          "type": "ANALOG_BTN"
+        },
+        "pov_up": {
+          "id": 0,
+          "type": "POV_BTN"
+        },
+        "pov_up_right": {
+          "id": 40,
+          "type": "POV_BTN"
+        },
+        "pov_right": {
+          "id": 90,
+          "type": "POV_BTN"
+        },
+        "pov_down_right": {
+          "id": 135,
+          "type": "POV_BTN"
+        },
+        "pov_down": {
+          "id": 180,
+          "type": "POV_BTN"
+        },
+        "pov_down_left": {
+          "id": 225,
+          "type": "POV_BTN"
+        },
+        "pov_left": {
+          "id": 270,
+          "type": "BTN"
+        },
+        "pov_left_up": {
+          "id": 315,
+          "type": "POV_BTN"
+        }
+      }
+    }
+  }

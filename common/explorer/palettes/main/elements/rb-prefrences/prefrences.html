@@ -1,0 +1,43 @@
+<template>
+    <x-dialog id="prefrences-dialog" class="rb-prefrences" style="width: 100%; height: 100%; bottom: 0px;">
+        <div id="rb-content" class="rb-row" style="overflow:hidden;">
+            <div class="rb-flex rb-column">
+                <div class="rb-flex top" style="flex: 0 0 auto; height: 50px; float: right !important;">
+                    <x-box style="margin: 10px;">
+                        <x-button class="button">
+                            <x-label class="fg-black bold">Close</x-label>
+                        </x-button>
+                    </x-box>
+                    <x-box class="center fullwidth">
+                        <x-label class="fg-white">Prefrences</x-label>
+                    </x-box>
+                </div>
+                <div class="rb-flex rb-row ">
+                    <div class="rb-flex options center" style="align-self: stretch; flex: 0 0 auto; width: 300px; border-right: 1px solid black;">
+                        <x-box id="prefrences-tree">
+                        </x-box>
+                    </div>
+                    <div class="rb-flex rb-column main" style="padding-left: 5px">
+                        <div class="rb-flex rb-column" style="align-self: stretch; flex-grow: 2;">
+                            <div class="rb-flex center rb-row" style="align-self: stretch; flex: 0 0 auto; height: 100px;">
+                                <x-box vertical class="center" style="width: 100%;">
+                                    <x-label class="bold size-24 center margin-10-top">Project Name</x-label>
+                                    <x-input required style="min-width: 100%;">
+                                        <x-label style="height: 16px">Project Name</x-label>
+                                    </x-input>
+                                </x-box>
+                            </div>
+                            <div class="rb-flex rb-row" style="flex: 0 0 auto; height: 100px;">
+                                <x-box vertical class="center" style="width: 100%;">
+                                    <x-label class="bold size-24 center margin-10-top">Package</x-label>
+                                    <x-input disabled style="min-width: 100%; height: 60px;" value="org.usfirst.frc.teamXXXX.robot">
+                                    </x-input>
+                                </x-box>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </x-dialog>
+</template>

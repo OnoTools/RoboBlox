@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>RoboBlox Project</title>
+    <!-- CSS/LESS -->
+
+    <link rel="stylesheet" href="./node_modules/xel/stylesheets/material.theme.css" />
+    <link rel="stylesheet" href="assets/style/easyhelp.css" />
+    <link rel="stylesheet/less" type="text/css" href="assets\style\main-project.less" />
+
+    <!-- Fonts -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Syncopate">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto">
+  
+    <!-- Less.js (for developement) -->
+    <script src="./node_modules/less/dist/less.min.js"></script>
+  
+    <!-- Xel.js -->
+    <script src="./node_modules/xel/xel.min.js"></script>
+
+    <script src="./node_modules/blockly/blockly_compressed.js"></script>
+    <script src="./node_modules/blockly/blocks_compressed.js"></script>
+
+    <script src="./node_modules/blockly/msg/js/en.js"></script>
+  
+    <!-- forklift.js -->
+    <script src="./node_modules/forklift.js/forklift.js"></script>
+</head>
+
+<xml xmlns="http://www.w3.org/1999/xhtml" id="subsystemToolbox" style="display: none;">
+    <category name="Subsystem">
+        <category name="Control">
+
+        </category>
+        <category name="Motors">
+                
+        </category>
+        <category name="Sensors">
+                
+        </category>
+    </category>
+    <sep></sep>
+    <category name="Logic">
+        <category name="If">
+          <block type="controls_if"></block>
+          <block type="controls_if">
+            <mutation else="1"></mutation>
+          </block>
+          <block type="controls_if">
+            <mutation elseif="1" else="1"></mutation>
+          </block>
+        </category>
+        <category name="Boolean">
+          <block type="logic_compare"></block>
+          <block type="logic_operation"></block>
+          <block type="logic_negate"></block>
+          <block type="logic_boolean"></block>
+          <block type="logic_null"></block>
+          <block type="logic_ternary"></block>
+        </category>
+      </category>
+      <category name="Loops">
+        <block type="controls_repeat_ext">
+          <value name="TIMES">
+            <block type="math_number">
+              <field name="NUM">10</field>
+            </block>
+          </value>
+        </block>
+        <block type="controls_whileUntil"></block>
+        <block type="controls_for">
+          <field name="VAR">i</field>
+          <value name="FROM">
+            <block type="math_number">
+              <field name="NUM">1</field>
+            </block>
+          </value>
+          <value name="TO">
+            <block type="math_number">
+              <field name="NUM">10</field>
+            </block>
+          </value>
+          <value name="BY">
+            <block type="math_number">
+              <field name="NUM">1</field>
+            </block>
+          </value>
+        </block>
+        <block type="controls_forEach"></block>
+        <block type="controls_flow_statements"></block>
+      </category>
+      <category name="Math">
+        <block type="math_number"></block>
+        <block type="math_arithmetic"></block>
+        <block type="math_single"></block>
+        <block type="math_trig"></block>
+        <block type="math_constant"></block>
+        <block type="math_number_property"></block>
+        <block type="math_round"></block>
+        <block type="math_on_list"></block>
+        <block type="math_modulo"></block>
+        <block type="math_constrain">
+          <value name="LOW">
+            <block type="math_number">
+              <field name="NUM">1</field>
+            </block>
+          </value>
+          <value name="HIGH">
+            <block type="math_number">
+              <field name="NUM">100</field>
+            </block>
+          </value>
+        </block>
+        <block type="math_random_int">
+          <value name="FROM">
+            <block type="math_number">
+              <field name="NUM">1</field>
+            </block>
+          </value>
+          <value name="TO">
+            <block type="math_number">
+              <field name="NUM">100</field>
+            </block>
+          </value>
+        </block>
+        <block type="math_random_float"></block>
+      </category>
+      <category name="Lists">
+        <block type="lists_create_empty"></block>
+        <block type="lists_create_with"></block>
+        <block type="lists_repeat">
+          <value name="NUM">
+            <block type="math_number">
+              <field name="NUM">5</field>
+            </block>
+          </value>
+        </block>
+        <block type="lists_length"></block>
+        <block type="lists_isEmpty"></block>
+        <block type="lists_indexOf"></block>
+        <block type="lists_getIndex"></block>
+        <block type="lists_setIndex"></block>
+      </category>
+      <category name="Variables" custom="VARIABLE"></category>
+      <category name="Functions" custom="PROCEDURE"></category>
+      <sep></sep>
+      <category name="Library" expanded="true">
+        <category name="CTRE">
+          
+        </category>
+        <category name="Kauilabs">
+                
+        </category>
+      </category>
+  
+  </xml>
+<body class="theme-gray">
+    <rb-menubar></rb-menubar>
+    <rb-menutabs></rb-menutabs>
+    <rb-content></rb-content>
+    <rb-prefrences></rb-prefrences>
+</body>
+
+
+
+
+<script>
+    const { remote } = require('electron')
+    const { dialog } = remote
+    const { BrowserWindow } = remote;
+
+    const path = require('path')
+
+    //Require helper and lib modules
+    const managerRemote = remote.require("import-window")
+    const managerLocal = require("import-window")
+
+    //Requires XEL custom class [Work in progess!]
+    const xel = require('xel-extend')
+
+    //Require global configuration
+    /********************************************************************************************/
+
+    //Parse args passed via explorer
+    let args = managerLocal.parseArgs()
+
+    //Define the window
+    let win = new xel.Window(args.id)
+    //Create a menu bar and append buttons
+    const globalLanguage = "en"
+
+    //Create a MenuTab and a the main ViewBox
+    //let tabs = new xel.MenuTabs("#menutab")
+    let contextmenu = new xel.ContextMenu()
+
+    let dialogInput = new xel.DialogInput()
+    let prompt = new xel.Prompt()
+    let drawer = new xel.Drawer()
+
+
+    fl.App.loadPalette("SIDEBAR", "common/project/palettes/sidebar/sidebar.js")
+    fl.App.loadPalette("CONSOLE", "common/project/palettes/console/console.js")
+    fl.App.loadPalette("MAIN", "common/project/palettes/main/main.js")
+    fl.App.loadUnit("CONSOLE|MAIN", "OI", "common/project/units/oi/oi.js")
+    fl.App.loadUnit("MAIN", "MAP", "common/project/units/map/map.js")
+    fl.App.loadUnit("MAIN", "HISTORY", "common/project/units/history/history.js")
+    fl.App.loadUnit("MAIN|CONSOLE|SIDEBAR", "STRUCTURE", "common/project/units/structure/structure.js")
+
+    fl.App.run()
+    let edit = {}
+</script>
+
+</html>

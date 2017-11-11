@@ -1,0 +1,54 @@
+<template>
+        <rb-box flex row id="container" style="justify-content: flex-start;">
+            <rb-sidebar>Hello</rb-sidebar>
+            <rb-box flex column>
+               <rb-box flex id="main" class="rb-main" style="align-self: stretch; flex-grow: 2;">
+        <section id="main-1" style="position: relative;  margin: auto; top: 30%; right: 0; bottom: 0; left: 0; border-radius: 3px; text-align: center;">
+            <x-label style="font-size: 72px;" class="rb-font">
+                <span class="bold">ROBO</span>
+                <span class="rb-red">B</span><span class="rb-yellow">L</span><span class="rb-green">O</span><span class="rb-blue">X</span>
+            </x-label>
+            <x-label>A FRC Blockly Code Editor</x-label>
+        </section>
+    </rb-box>
+    <rb-box flex column id="" class="rb-footer" style="flex: 0 0 auto; height: 188px;">
+        <div class="rb-green-bg fullwidth">
+            <x-button toggled class="fg-black rb-button rb-green-bg" style="width: 100%;" id="new-project">
+                <div style="width: 10%;" style="center">
+                    <x-icon name="insert-drive-file"></x-icon>
+                </div>
+                <div style="width: 80%;" class="center">
+                    New Project
+                </div>
+                <div style="width: 10%;">
+                </div>
+            </x-button>
+        </div>
+        <div class="rb-yellow-bg fullwidth">
+            <x-button toggled class="fg-black rb-button rb-yellow-bg" style="width: 100%;" id="open-project">
+                <div style="width: 10%;" style="center">
+                    <x-icon name="folder"></x-icon>
+                </div>
+                <div style="width: 80%;" class="center">
+                    Open Project
+                </div>
+                <div style="width: 10%;">
+                </div>
+            </x-button>
+        </div>
+        <div class="rb-blue-bg fullwidth">
+            <x-button toggled class="fg-black rb-button rb-blue-bg fullwidth" id="about">
+                <div style="width: 10%;" style="center">
+                    <x-icon name="help"></x-icon>
+                </div>
+                <div style="width: 80%;" class="center">
+                    About
+                </div>
+                <div style="width: 10%;">
+                </div>
+            </x-button>
+        </div>
+    </rb-box>
+            </rb-box>
+        </rb-box>
+</template>

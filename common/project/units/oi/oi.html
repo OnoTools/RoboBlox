@@ -1,0 +1,45 @@
+<template>
+    <rb-box flex row column class="view-oi">
+        <rb-box flex row style="flex: 0 0 auto; height: 51px;">
+            <rb-box flex row>
+                <rb-box flex style="flex: 0 0 auto; width: 300px; margin-top: 10px;">
+                    <rb-box flex class="size-24 bold center">
+                        <x-box style="margin-left: 30px">
+                            <x-icon name="videogame-asset"></x-icon>
+                            <x-label>Operator Interface</x-label>
+                        </x-box>
+                    </rb-box>
+                </rb-box>
+            </rb-box>
+            <rb-box flex style="flex: 0 0 auto; width: 200px; margin-right: 15px; z-index: 3;">
+                <div class="fullwidth" style="margin-top: 20px">
+                    <x-box vertical>
+                        <x-button toggled class="fg-black rb-button rb-green-bg fullwidth" id="oi-add">
+                            <div style="width: 10%;" style="center">
+                                <x-icon name="gamepad"></x-icon>
+                            </div>
+                            <div style="width: 5%;">
+                            </div>
+                            <div style="width: 95%;" class="center bold">
+                                Add Controller
+                            </div>
+
+                        </x-button>
+
+                        <x-select id="layouts" class="fullwidth" style="margin-top: 5px;">
+                            <x-menu>
+                            </x-menu>
+                        </x-select>
+                    </x-box>
+                </div>
+            </rb-box>
+        </rb-box>
+
+        <rb-box flex row style="z-index: 1;">
+            <rb-box flex id="oi-sidebar" class="bg-gray oi-tree" style="overflow-y:scroll; ">
+                <x-box id="oi-tree">
+                </x-box>
+            </rb-box>
+        </rb-box>
+    </rb-box>
+</template>

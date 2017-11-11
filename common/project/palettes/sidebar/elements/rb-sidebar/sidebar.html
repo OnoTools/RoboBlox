@@ -1,0 +1,38 @@
+<template>
+    <rb-box flex column>
+        <rb-box flex class="rb-tabs center" style="flex: 0 0 auto; height: 50px; padding: none; margin: none">
+            <x-tabs id="tabs" class="bg-gray" style="padding-left: 60px;">
+                <x-tab selected id="explorer">
+                    <x-label class="size-20">Explorer</x-label>
+                </x-tab>
+                <x-tab id="history">
+                    <x-label class="size-20">History</x-label>
+                </x-tab>
+            </x-tabs>
+        </rb-box>
+        <rb-box flex id="view" class="rb-sections" style="height: 0px; overflow-y: scroll">
+            <rb-box id="explorer">
+                <rb-box flex class="rb-project-name center" style="flex: 0 0 auto; height: 50px;">
+                    <x-label id="project-titlename" style="padding-top: 5px;"></x-label>
+                </rb-box>
+                <x-box id="sidebar-tree">
+                </x-box>
+                <div style="height: 80px;">
+                </div>
+            </rb-box>
+            <rb-box id="history" class="rb-history">
+                
+            </rb-box>
+        </rb-box>
+        <rb-box>
+            <div class="rb-yellow-bg fullwidth" style="cursor: pointer">
+                <x-button toggled class="fg-black rb-button rb-yellow-bg" style="width: 100%;" id="clear-history">
+                  <div style="width: 100%; " class="center size-24">
+                    <strong>Clear History</strong>
+                  </div>
+                </x-button>
+              </div>
+        </rb-box>
+    </rb-box>
+
+</template>

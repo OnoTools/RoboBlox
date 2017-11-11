@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>RoboBlox Explorer</title>
+  <!-- CSS/LESS -->
+  <link rel="stylesheet" href="./node_modules/xel/stylesheets/material.theme.css" />
+  <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.css" />
+  <link rel="stylesheet" href="assets/style/easyhelp.css" />
+  <link rel="stylesheet/less" type="text/css" href="assets\style\main-explorer.less" />
+
+  <!-- Fonts -->
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Syncopate">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto">
+
+  <!-- Less.js (for developement) -->
+  <script src="./node_modules/less/dist/less.min.js"></script>
+
+  <!-- Xel.js -->
+  <script src="./node_modules/xel/xel.min.js"></script>
+
+  <!-- forklift.js -->
+  <script src="./node_modules/forklift.js/forklift.js"></script>
+</head>
+
+<body class="theme-gray">
+  <rb-menubar></rb-menubar>
+  <rb-content></rb-content>
+  <rb-loader></rb-loader>
+</body>
+
+<script>
+  const { remote } = require('electron')
+  const { dialog } = remote
+  const { BrowserWindow } = remote;
+
+  const path = require('path')
+
+  //Require Import-Window
+  const managerRemote = remote.require("import-window")
+  const managerLocal = require("import-window")
+
+  //Requires XEL-Extend
+  const xel = require('xel-extend')
+
+  //Require global configuration
+  /********************************************************************************************/
+  //Parse window arguments (for windowID)
+  let args = managerLocal.parseArgs()
+
+
+  //Define the window
+  let windowID = args.id
+  
+  let win = new xel.Window(windowID)
+  //Create a menu bar and append buttons
+
+  const globalLanguage = "en"
+
+  //Create a MenuTab and a the main ViewBox
+  //let tabs = new xel.MenuTabs("#menutab")
+  let contextmenu = new xel.ContextMenu()
+
+  let dialogInput = new xel.DialogInput()
+
+  fl.App.loadPalette("SIDEBAR", "common/explorer/palettes/sidebar/sidebar.js")
+  fl.App.loadPalette("MAIN", "common/explorer/palettes/main/main.js")
+  fl.App.loadPalette("LOADER", "common/explorer/palettes/loader/loader.js")
+  fl.App.run()
+</script>
+</html>

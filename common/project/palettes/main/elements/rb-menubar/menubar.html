@@ -1,0 +1,98 @@
+<template>
+
+        <x-menubar id="menubar">
+                <x-label style="font-size: 17px; margin-left: 10px;margin-right: 5px" class="rb-font">
+                        <span class="bold">ROBO</span>
+                        <span class="rb-red bold">B</span><span class="rb-yellow">L</span><span class="rb-green">O</span><span class="rb-blue">X</span>
+                    </x-label>
+                <x-menuitem>
+                    <x-label>File</x-label>
+                    <x-menu>
+                        <x-menuitem id="menu-item-newfile">
+                            <x-icon name="folder"></x-icon>
+                            <x-label>New Project</x-label>
+                            <x-shortcut ctrl key="N"></x-shortcut>
+                        </x-menuitem>
+                        <x-menuitem>
+                            <x-icon name="save"></x-icon>
+                            <x-label>Save</x-label>
+                            <x-shortcut ctrl key="S"></x-shortcut>
+                        </x-menuitem>
+        
+                        <x-menuitem>
+                            <x-icon name="save"></x-icon>
+                            <x-label>Save as…</x-label>
+                            <x-shortcut ctrl shift key="S"></x-shortcut>
+                        </x-menuitem>
+                        <hr>
+                        <x-menuitem id="menu-file-prefrences">
+                            <x-icon name="settings"></x-icon>
+                            <x-label>Prefrences</x-label>
+                            <x-shortcut ctrl key="P" value="Control+P"></x-shortcut>
+                        </x-menuitem>
+                    </x-menu>
+                </x-menuitem>
+        
+                <x-menuitem class="x-menuitem">
+                    <x-label>Edit</x-label>
+        
+                    <x-menu>
+                        <x-menuitem id="menu-undo">
+                            <x-icon name="undo"</x-icon>
+                            <x-label>Undo</x-label>
+                            <x-shortcut ctrl key="Z" key="CTRL+Z"></x-shortcut>
+                        </x-menuitem>
+        
+                        <x-menuitem disabled id="menu-redo">
+                            <x-icon name="redo"></x-icon>
+                            <x-label>Redo</x-label>
+                            <x-shortcut ctrl key="Y" key="CTRL+Z"></x-shortcut>
+                        </x-menuitem>
+        
+                        <x-menuitem>
+                            <x-icon name="content-cut"></x-icon>
+                            <x-label>Cut</x-label>
+                            <x-shortcut ctrl key="X"></x-shortcut>
+                        </x-menuitem>
+        
+                        <x-menuitem>
+                            <x-icon name="content-copy"></x-icon>
+                            <x-label>Copy</x-label>
+                            <x-shortcut ctrl key="C"></x-shortcut>
+                        </x-menuitem>
+        
+                        <x-menuitem>
+                            <x-icon name="content-paste"></x-icon>
+                            <x-label>Paste</x-label>
+                            <x-shortcut ctrl key="V"></x-shortcut>
+                        </x-menuitem>
+                    </x-menu>
+                </x-menuitem>
+        
+                <x-menuitem class="x-menuitem">
+                    <x-label>View</x-label>
+                    <x-menu>
+                        <x-menuitem id="menu-view-console">
+                            <x-icon name=""></x-icon>
+                            <x-label>Console</x-label>
+                        </x-menuitem>
+                        <x-menuitem id="menu-view-sidebar">
+                            <x-icon name=""></x-icon>
+                            <x-label>Sidebar</x-label>
+                        </x-menuitem>
+                    </x-menu>
+                </x-menuitem>
+        
+                <x-menuitem class="x-menuitem">
+                    <x-label>Help</x-label>
+                    <x-menu>
+                        <x-menuitem id="menu-item-docs">
+                            <x-icon name="book"></x-icon>
+                            <x-label>Documentation</x-label>
+                        </x-menuitem>
+                    </x-menu>
+                </x-menuitem>
+                <div class="x-expand-drag"></div>
+        
+            </x-menubar>
+</template>
