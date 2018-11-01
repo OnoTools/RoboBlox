@@ -18,11 +18,11 @@
     "electron-config": "^1.0.0",
     "electron-window": "^0.8.1",
     "fontawesome": "^4.7.2",
-    "forklift.js": "github:Import-Python/forklift.js",
+    "fork-lift.js": "^0.1.9",
     "fs-jetpack": "^1.2.0",
-    "import-window": "github:Import-Python/import-window",
+    "import-window": "^1.0.2",
     "less": "^2.7.3",
     "xel": "0.0.63",
-    "xel-extend": "github:Import-Python/xel-extend"
+    "xel-extend": "^1.0.3"
   }
 }
